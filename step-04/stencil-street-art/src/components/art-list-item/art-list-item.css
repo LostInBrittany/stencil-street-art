@@ -1,0 +1,23 @@
+.art {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+  min-height: 50px;
+}
+
+.location {
+  margin-top: 0;
+}
+
+.address {
+  margin-right: 16px;
+}
+
+.coordinates {
+  font-size: 0.75rem;
+}
+
+.main-img {
+  max-height: 200px;
+}
