@@ -59,9 +59,9 @@ The tutorial is divided in steps, each one in its own directory:
 1. [First steps with Stencil](./step-01/)
 1. [Using Stencil elements](./step-02/)
 1. [Creating and iterating a list](./step-03/)
-1. [Filtering](./step-04/)
-1. [Sorting](./step-05/)
-1. [Calling the server](./step-06/)
+1. [Calling the server](./step-04/)
+1. [Filtering](./step-05/)
+1. [Sorting](./step-06/)
 1. [Routing URLs](./step-07/)
 1. [Adding the details](./step-08/)
 
