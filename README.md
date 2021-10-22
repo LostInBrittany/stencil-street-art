@@ -67,7 +67,7 @@ The tutorial is divided in steps, each one in its own directory:
 
 In each step directory you have a README file that explain the objective of the step. If you have problems or if you get lost, you also have the solution of each step in the step directories. 
 
-So if you want to see the intended result of  the 6th step, go to the `step-06` folder and do:
+So if you want to see the intended result of  the 4th step, go to the `step-04` folder and do:
 
 ```bash
 cd stencil-street-art
