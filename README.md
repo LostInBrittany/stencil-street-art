@@ -3,16 +3,12 @@
 
 # ![Stencil Street Art icon](./img/logo-48px.png)  Stencil Street Art
 
-> A note about language: this tutorial is written in English, but there are full translations available for [Spanish]() and [French](). 
-
 I have built this [Stencil tutorial](https://github.com/LostInBrittany/stencil-street-art) as a quick entry point to [Stencil](https://stenciljs.com/). 
 
 Stencil Street Art is based on my [Stencil Beers](https://github.com/LostInBrittany/stencil-beers) tutorial, but adapted to a different use case. 
 
 > ## Stencil
 > Stencil is a toolchain for building reusable, scalable Design Systems. Generate small, blazing fast, and 100% standards based Web Components that run in every browser.
-
-![Logo](./img/logo-500px.png)
 
 
 ## What are the objectives of this tutorial
@@ -36,9 +32,9 @@ The tutorial guides you through the entire process of building a simple applicat
 You can go through the whole tutorial in a couple of hours or you may want to spend a pleasant day really digging into it. If you're looking for a shorter introduction to Stencil, check out the [official website](https://stenciljs.com/).
 
 
-![Screenshot]()  
+![Logo](./img/logo-500px.png)
 
-![Screenshot]()
+![Screenshot](./img/step-00-01.png)  
 
 
 ## What do I need to use this tutorial?
