@@ -6,6 +6,11 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface ArtListItem {
+        "coordinates": string;
+        "link": string;
+        "location": string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -22,6 +27,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLArtListItemElement extends Components.ArtListItem, HTMLStencilElement {
+    }
+    var HTMLArtListItemElement: {
+        prototype: HTMLArtListItemElement;
+        new (): HTMLArtListItemElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -29,10 +40,16 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "art-list-item": HTMLArtListItemElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface ArtListItem {
+        "coordinates"?: string;
+        "link"?: string;
+        "location"?: string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -48,6 +65,7 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
+        "art-list-item": ArtListItem;
         "my-component": MyComponent;
     }
 }
@@ -55,6 +73,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "art-list-item": LocalJSX.ArtListItem & JSXBase.HTMLAttributes<HTMLArtListItemElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
