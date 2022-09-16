@@ -12,21 +12,30 @@ npm init stencil
 
 Stencil can be used to create standalone components, or entire apps. After running init you will be provided with a prompt so that you can choose the type of project to start. Please choose `component` to create your first Stencil component collection.
 
-```bash
-? Pick a starter › - Use arrow-keys. Return to submit.
+```
+? Select a starter project.
 
-   ionic-pwa     Everything you need to build fast, production ready PWAs
-   app           Minimal starter for building a Stencil app or website
-❯  component     Collection of web components that can be used anywhere
+Starters marked as [community] are developed by the Stencil Community,
+rather than Ionic. For more information on the Stencil Community, please see
+https://github.com/stencil-community › - Use arrow-keys. Return to submit.
+❯   component          Collection of web components that can be used anywhere
+    app [community]    Minimal starter for building a Stencil app or website
 ```
 
 Call your component collection `stencil-street-art`.
 
 ```bash
-✔ Pick a starter › component
-✔ Project name › stencil-street-art
+✔ Project name … stencil-street-art
+✔ Confirm? … yes
+✔ All setup  in 13 ms
 
-✔ All setup  in 25 ms
+  We suggest that you begin by typing:
+
+  $ cd stencil-street-art
+  $ npm install
+  $ npm start
+
+  You may find the following commands will be helpful:
 
   $ npm start
     Starts the development server.
@@ -38,17 +47,17 @@ Call your component collection `stencil-street-art`.
     Starts the test runner.
 
 
-  We suggest that you begin by typing:
-
-   $ cd stencil-street-art
-   $ npm install
-   $ npm start
-
   Further reading:
 
    - https://github.com/ionic-team/stencil-component-starter
 
   Happy coding! 🎈
+
+npm notice
+npm notice New minor version of npm available! 8.7.0 -> 8.19.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v8.19.2
+npm notice Run npm install -g npm@8.19.2 to update!
+npm notice
 ```
 
 As the starter suggest, go to the newly created `stencil-street-art` folder, and run:
@@ -62,29 +71,26 @@ Then point your browser to the given URL and you should see your first Stencil c
 
 ```bash
 $ npm install
-npm notice created a lockfile as package-lock.json. You should commit this file.
-npm WARN stencil-street-art@0.0.1 No repository field.
+npm start
+npm WARN deprecated puppeteer@10.4.0: Version no longer supported. Upgrade to @latest
 
-added 1 package from 1 contributor and audited 1 package in 1.509s
-found 0 vulnerabilities
+added 372 packages, and audited 373 packages in 1m
 
-$ npm start
-
-> stencil-street-art@0.0.1 start /home/horacio/git/stencil-street-art/stencil-street-art
+> stencil-street-art@0.0.1 start
 > stencil build --dev --watch --serve
 
-[31:36.2]  @stencil/core
-[31:36.5]  v2.9.0 🚙
-[31:38.3]  build, stencil-street-art, dev mode, started ...
-[31:38.4]  transpile started ...
-[31:39.8]  transpile finished in 1.40 s
-[31:39.8]  copy started ...
-[31:39.8]  generate lazy started ...
-[31:39.8]  copy finished (0 files) in 88 ms
-[31:40.9]  generate lazy finished in 1.16 s
-[31:40.9]  build finished, watching for changes... in 2.61 s
+[32:40.8]  @stencil/core
+[32:40.9]  v2.18.0 🔥
+[32:42.4]  build, stencil-street-art, dev mode, started ...
+[32:42.4]  transpile started ...
+[32:45.8]  transpile finished in 3.37 s
+[32:45.8]  copy started ...
+[32:45.8]  generate lazy started ...
+[32:45.8]  copy finished (0 files) in 29 ms
+[32:46.1]  generate lazy finished in 336 ms
+[32:46.2]  build finished, watching for changes... in 3.76 s
 
-[31:41.0]  http://localhost:3333/
+[32:46.2]  http://localhost:3333/
 ```
 
 ![Your first Stencil component](../img/step-01-01.png)
